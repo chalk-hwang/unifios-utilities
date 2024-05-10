@@ -4,7 +4,7 @@
 
 ## Prerequisities
 
-- Working **`on_boot.d`** setup (check [unifi-utilities/unifios-utilities#on-boot-script](https://github.com/unifi-utilities/unifios-utilities/tree/main/on-boot-script) for instructions)
+- Working **`on_boot.d`** setup (check [chalk-hwang/unifios-utilities#on-boot-script](https://github.com/chalk-hwang/unifios-utilities/tree/main/on-boot-script) for instructions)
 - A VLAN network (you can use one you are already using)
 
 **Recommended**
@@ -81,4 +81,4 @@ If you want to know what mosquitto is doing, run `$ podman logs -f mosquitto` to
 
 ## Credits
 
-Huge thanks to @boostchicken for his incredible work on [unifios-utilities](https://github.com/unifi-utilities/unifios-utilities) and all contributors of this repo!
+Huge thanks to @boostchicken for his incredible work on [unifios-utilities](https://github.com/chalk-hwang/unifios-utilities) and all contributors of this repo!

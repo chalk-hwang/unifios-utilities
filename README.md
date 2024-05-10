@@ -1,11 +1,11 @@
 # unifios-utilities [![Discord](https://img.shields.io:/discord/939817841107034172?label=Discord&logo=Discord&style=for-the-badge "Discord")](https://discord.gg/8zqrQJFghg) [![!Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)](https:///www.cloudflare.com)
 
-[![UDM Podman](https://github.com/unifi-utilities/unifios-utilities/actions/workflows/podman-udm.yml/badge.svg)](https://github.com/unifi-utilities/unifios-utilities/actions/workflows/podman-udm.yml)
-[![UDM-Pro-SE Podman](https://github.com/unifi-utilities/unifios-utilities/actions/workflows/podman-udmp-udmse.yml/badge.svg?branch=main)](https://github.com/unifi-utilities/unifios-utilities/actions/workflows/podman-udmp-udmse.yml)
+[![UDM Podman](https://github.com/chalk-hwang/unifios-utilities/actions/workflows/podman-udm.yml/badge.svg)](https://github.com/chalk-hwang/unifios-utilities/actions/workflows/podman-udm.yml)
+[![UDM-Pro-SE Podman](https://github.com/chalk-hwang/unifios-utilities/actions/workflows/podman-udmp-udmse.yml/badge.svg?branch=main)](https://github.com/chalk-hwang/unifios-utilities/actions/workflows/podman-udmp-udmse.yml)
 
 ## Branches
-1. [1.12.x](https://github.com/unifi-utilities/unifios-utilities/tree/v1.12.x) - Support for 1.x.x firmware line
-1. [main](https://github.com/unifi-utilities/unifios-utilities) - Support for 2.4.x and above
+1. [1.12.x](https://github.com/chalk-hwang/unifios-utilities/tree/v1.12.x) - Support for 1.x.x firmware line
+1. [main](https://github.com/chalk-hwang/unifios-utilities) - Support for 2.4.x and above
 
 ### Current Branch is main, supporting UniFi OS 2.5.x
 
@@ -13,7 +13,7 @@ A collection of things to enhance the capabilities of your Unifi Dream Machine, 
 
 ### ⚠️ Breaking Changes for UniFi OS 3.x
 
-UniFi OS 3.x no longer supports podman. The utilities in this respository **may not work as documented**. For alternatives, review the documentation in [nspawn-container](https://github.com/unifi-utilities/unifios-utilities/tree/main/nspawn-container) or consider direct installations like [wpa_supplicant-UniFi-OS-3.x for AT&T Fiber](https://github.com/jphamdev/wpa_supplicant-UniFi-OS-3.x).
+UniFi OS 3.x no longer supports podman. The utilities in this respository **may not work as documented**. For alternatives, review the documentation in [nspawn-container](https://github.com/chalk-hwang/unifios-utilities/tree/main/nspawn-container) or consider direct installations like [wpa_supplicant-UniFi-OS-3.x for AT&T Fiber](https://github.com/jphamdev/wpa_supplicant-UniFi-OS-3.x).
 
 -----
 ## Custom Kernel
@@ -54,7 +54,7 @@ at [macvlan-unifi-udr](https://github.com/whi-tw/macvlan-unifi-udr).
 
 Do this first. Enables `init.d` style scripts to run on every boot of your UDM.
 Includes examples to run `wpa-supplicant/eap-proxy` and/or `ntop-ng` on startup.
-Follow this [readme](https://github.com/unifi-utilities/unifios-utilities/blob/main/on-boot-script/README.md).
+Follow this [readme](https://github.com/chalk-hwang/unifios-utilities/blob/main/on-boot-script/README.md).
 
 **It enables complete customization of your UDM/P and fills the gap that config.gateway.json left behind.**
 
@@ -93,7 +93,7 @@ If you need python3 on your UDM, generally not recommended, can always use it in
 ## DNS Providers
 
 Install a DNS server that functions as a network-wide ad and tracker blocker, and which can also securely proxy encrypted DNS requests to an upstream DNS provider.
-Begin by following the instructions to setup [on-boot-script](https://github.com/unifi-utilities/unifios-utilities/tree/main/on-boot-script) and [dns-common](https://github.com/unifi-utilities/unifios-utilities/tree/main/dns-common/on_boot.d).
+Begin by following the instructions to setup [on-boot-script](https://github.com/chalk-hwang/unifios-utilities/tree/main/on-boot-script) and [dns-common](https://github.com/chalk-hwang/unifios-utilities/tree/main/dns-common/on_boot.d).
 Then, follow the guides below to setup either Pi-Hole, NextDNS, or AdGuard Home.
 
 ### dns-common
@@ -144,7 +144,7 @@ Update your cloudflare domains from your UDM with podman.
 |udm-proxy           |    <https://github.com/xpherism/udm-proxy>           |Run a reverse proxy (using caddy in vlan) on the udm-pro. |
 | Telegram-Notifications On WAN Failover          |   <https://github.com/fire1ce/UDM-Failover-Telegram-Notifications>            | Use telegram bot to be notified of a wan failover with local account|
 
-[![!Protected by Cloudflare](https://github.com/unifi-utilities/unifios-utilities/assets/427295/5cda2367-fbda-438e-b942-2ebf4a105b82)](https://cloudflare.com)
+[![!Protected by Cloudflare](https://github.com/chalk-hwang/unifios-utilities/assets/427295/5cda2367-fbda-438e-b942-2ebf4a105b82)](https://cloudflare.com)
 
 
 ## Unsupported / No longer maintained
@@ -165,4 +165,4 @@ Working in the shell means that mistakes can happen. Deleted directories or pack
 3. Release the reset button and power the unit.
 4. Again press the reset button for 15+ seconds.
 
-Thanks to user [cfallwell](https://github.com/cfallwell) for describing this fix [here](https://github.com/unifi-utilities/unifios-utilities/issues/428#issuecomment-1386212026).
+Thanks to user [cfallwell](https://github.com/cfallwell) for describing this fix [here](https://github.com/chalk-hwang/unifios-utilities/issues/428#issuecomment-1386212026).

@@ -2,7 +2,7 @@
 
 If you're going to create several nspawn containers, you can save some disk
 space by using overlayfs to use a common base. Follow the instructions in the
-unifi-utilities [documentation](https://github.com/unifi-utilities/unifios-utilities/blob/main/nspawn-container/README.md)
+unifi-utilities [documentation](https://github.com/chalk-hwang/unifios-utilities/blob/main/nspawn-container/README.md)
 for UnifiOS 3.0+ containers. I called my container `debian-base`.
 
 Next, we need an `upperdir` where the file changes are saved and a `workdir`

@@ -10,7 +10,7 @@ For example, [configuring two IP addresses on your WAN interface, so that you ca
 
 ## Installation
 
-1. [Enable on-boot-script](https://github.com/unifi-utilities/unifios-utilities/blob/main/on-boot-script/README.md)
+1. [Enable on-boot-script](https://github.com/chalk-hwang/unifios-utilities/blob/main/on-boot-script/README.md)
 1. Copy `42-watch-for-changes.sh` to `/data/on_boot.d/`
    - Check the `FILE` variable, it should point to a file that exists, it might be in `/data` or in `/data`
 1. Copy `on-state-change.sh` to `/data/scripts/`

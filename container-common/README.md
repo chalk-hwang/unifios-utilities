@@ -6,7 +6,7 @@
 
 ## Requirements
 
-1. You have already setup the on boot script described [here](https://github.com/unifi-utilities/unifios-utilities/tree/main/on-boot-script)
+1. You have already setup the on boot script described [here](https://github.com/chalk-hwang/unifios-utilities/tree/main/on-boot-script)
 
 ## Customization
 
@@ -18,7 +18,7 @@ While a 100Mb log limit per container should give plenty of log data for all fea
 
 ```sh
 # Download 05-container-common.sh from GitHub
-curl -L https://raw.githubusercontent.com/unifi-utilities/unifios-utilities/main/container-common/on_boot.d/05-container-common.sh -o /data/on_boot.d/05-container-common.sh;
+curl -L https://raw.githubusercontent.com/chalk-hwang/unifios-utilities/main/container-common/on_boot.d/05-container-common.sh -o /data/on_boot.d/05-container-common.sh;
 # Set execute permission
 chmod a+x /data/on_boot.d/05-container-common.sh;
 ```

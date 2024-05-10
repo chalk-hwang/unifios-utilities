@@ -7,7 +7,7 @@
 
 ## Requirements
 
-1. You have successfully setup the on boot script described [here](https://github.com/unifi-utilities/unifios-utilities/tree/main/on-boot-script)
+1. You have successfully setup the on boot script described [here](https://github.com/chalk-hwang/unifios-utilities/tree/main/on-boot-script)
 2. You have to have services you want to load-balance, an example would be a multi-master k3s cluster.
 
 ## Steps
@@ -19,7 +19,7 @@
    1. If you want to run on the host network
       1. You don't have to do anything extra to run on the host network all the instructions / scripts assume this setup.
    2. If you want to run on a custom docker network do the following:
-      1. Setup the network - there are some instructions in the Customizations setting of the pihole instructions: https://github.com/unifi-utilities/unifios-utilities/tree/main/run-pihole#customizations
+      1. Setup the network - there are some instructions in the Customizations setting of the pihole instructions: https://github.com/chalk-hwang/unifios-utilities/tree/main/run-pihole#customizations
       2. Copy [21-haproxy.conflist](./21-haproxy.conflist) to `/data/podman/cni/` and update its values to reflect your environment.
       3. Execute the `/data/on_boot.d/05-install-cni-plugins.sh` script to create the network.
       4. Edit `/data/on_boot.d/50-haproxy.sh` and change `--net=host` to `--network haproxy`

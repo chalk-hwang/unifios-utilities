@@ -8,8 +8,8 @@
 ## Requirements
 
 1. You have successfully set up the on boot script described
-   [here](https://github.com/unifi-utilities/unifios-utilities/tree/main/on-boot-script)
-2. [Optional] [`25-add-cron-jobs.sh`](https://github.com/unifi-utilities/unifios-utilities/blob/main/on-boot-script/examples/udm-files/on_boot.d/25-add-cron-jobs.sh)
+   [here](https://github.com/chalk-hwang/unifios-utilities/tree/main/on-boot-script)
+2. [Optional] [`25-add-cron-jobs.sh`](https://github.com/chalk-hwang/unifios-utilities/blob/main/on-boot-script/examples/udm-files/on_boot.d/25-add-cron-jobs.sh)
 
 ## Installation
 
@@ -39,5 +39,5 @@ You can combine the two args to forcefully upgrade to the latest version:
 
 ### Why not `podman-update`?
 
-https://github.com/unifi-utilities/unifios-utilities/issues/288#issuecomment-992404375
+https://github.com/chalk-hwang/unifios-utilities/issues/288#issuecomment-992404375
 
